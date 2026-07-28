@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://784eil0ot1c4"]
+
+[ext_resource type="Script" uid="uid://yfhfnnk1ncw6" path="res://scripts/floating_island.gd" id="1_q0j0h"]
+[ext_resource type="Texture2D" uid="uid://duok5r4awnxjq" path="res://icon.svg" id="2_ar5jj"]
+
+[node name="MainGame" type="Node3D" unique_id=1078515755]
+
+[node name="FloatingIslandRoot" type="Node3D" parent="." unique_id=1791408343]
+script = ExtResource("1_q0j0h")
+
+[node name="Sprite3D" type="Sprite3D" parent="FloatingIslandRoot" unique_id=1559639356]
+texture = ExtResource("2_ar5jj")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=546991798]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, 0.34202012, 0, -0.34202012, 0.9396926, 0, 2, 5)
