@@ -11,5 +11,19 @@ script = ExtResource("1_q0j0h")
 [node name="Sprite3D" type="Sprite3D" parent="FloatingIslandRoot" unique_id=1559639356]
 texture = ExtResource("2_ar5jj")
 
+[node name="BottomCones" type="Node3D" parent="FloatingIslandRoot" unique_id=1984782292]
+
+[node name="ConeBack" type="Sprite3D" parent="FloatingIslandRoot/BottomCones" unique_id=1839506093]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, -0.8, -0.3)
+texture = ExtResource("2_ar5jj")
+
+[node name="ConeMid" type="Sprite3D" parent="FloatingIslandRoot/BottomCones" unique_id=1233097753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0)
+texture = ExtResource("2_ar5jj")
+
+[node name="ConeFront" type="Sprite3D" parent="FloatingIslandRoot/BottomCones" unique_id=953769457]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, -1, 0.3)
+texture = ExtResource("2_ar5jj")
+
 [node name="Camera3D" type="Camera3D" parent="." unique_id=546991798]
 transform = Transform3D(1, 0, 0, 0, 0.9396926, 0.34202012, 0, -0.34202012, 0.9396926, 0, 2, 5)
